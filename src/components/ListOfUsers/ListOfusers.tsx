@@ -1,8 +1,14 @@
 import { Badge, Card, Table, TableBody, TableCell, TableHead, TableHeaderCell, TableRow, Title } from '@tremor/react'
-import { useAppSelector } from '../../hooks/store'
+import { useAppDispatch, useAppSelector } from '../../hooks/store'
+import { deleteUserById, UserId } from '../../store/users/slice'
 
 export function ListOfUsers() {
   const users = useAppSelector(state => state.users)
+  const dispatch = useAppDispatch()
+
+  const handleRemoveUser = (id: UserId) => {
+    dispatch(deleteUserById(id))
+  }
 
   return (
     <Card>
