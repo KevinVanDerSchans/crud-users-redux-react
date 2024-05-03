@@ -53,7 +53,7 @@ export function CreateNewUser() {
             type='submit'
             style={{ marginTop: '16px' }}
           >
-            Crear usuario
+            Create user
           </Button>
           <span>
             {result === 'ok' && <Badge color='green'>Saved correctly</Badge>}
