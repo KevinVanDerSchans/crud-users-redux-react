@@ -1,11 +1,14 @@
+import { ListOfUsers } from '../ListOfUsers/ListOfUsers'
+import { CreateNewUser } from '../CreateNewUser/CreateNewUser'
+import { Toaster } from 'sonner'
 import './App.css'
 
 function App() {
   return (
     <>
-      <div className='app'>
-        <h1>CRUD Users</h1>
-      </div>
+      <ListOfUsers />
+      <CreateNewUser />
+      <Toaster richColors />
     </>
   )
 }
