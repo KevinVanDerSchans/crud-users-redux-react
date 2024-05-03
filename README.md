@@ -1,16 +1,3 @@
-Imagen de project-overview
-
-Project description
-
-Deploy Link
-
-Añadir Features
-
-Revisar Technologies and Tools used
-
-<br>
-<br>
-
 # CRUD Users
 
 ## ReactTS / Redux
@@ -19,9 +6,9 @@ Revisar Technologies and Tools used
 
 <div align="center">
   <img
-    src="public/readme/project-overview.png"
+    src="public/readme/redux.svg"
     alt="Project overview"
-    width="850"
+    width="250"
   >
 </div>
 
@@ -29,13 +16,9 @@ Revisar Technologies and Tools used
 
 <div>
 
-Project description
+    CRUD Users with React, Redux and TypeScript.
 
 </div>
-
-<br>
-
-**DEPLOY**: <br> DEPLOY LINK
 
 <br>
 <br>
@@ -45,7 +28,6 @@ Project description
 - [CRUD Users](#crud-users)
   - [ReactTS / Redux](#reactts--redux)
 - [Index](#index)
-  - [Features](#features)
   - [Technologies and Tools used](#technologies-and-tools-used)
   - [Project Setup](#project-setup)
     - [Compile and Hot-Reload for Development](#compile-and-hot-reload-for-development)
@@ -54,18 +36,8 @@ Project description
   - [Contribution](#contribution)
   - [Project Status](#project-status)
   - [Project Developer](#project-developer)
-  - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
 
 <br>
-
-## Features
-
-<div>
-
-    ✔️ Features...
-
-</div>
-
 <br>
 
 ## Technologies and Tools used
@@ -73,6 +45,7 @@ Project description
 <div align="center">
   <br>
     <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="./public/readme/react.svg" alt="React" width="60" height="60" style="margin-right: 24px"/></a>
+    <a href="https://redux.js.org/" target="_blank" rel="noreferrer"> <img src="./public/readme/redux.svg" alt="Redux" width="60" height="60" style="margin-right: 24px"/></a>
     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="./public/readme/typescript.svg" alt="typescript" width="60" height="60" style="margin-right: 24px" /></a>
   <br>
   <br>
@@ -132,36 +105,3 @@ If you want to contribute to this project, follow these steps:
 
 | [<img src="https://avatars.githubusercontent.com/u/122877560?v=4" width=115><br><sub>Kevin Schans</sub>](https://github.com/KevinVanDerSchans) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------: |
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses
-  [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or
-  `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` &
-  `plugin:react/jsx-runtime` to the `extends` list
