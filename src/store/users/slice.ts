@@ -15,21 +15,21 @@ export interface UserWithId extends User {
 const DEFAULT_STATE = [
   {
     id: '1',
-    name: 'Yazman Rodriguez',
-    email: 'yazmanito@gmail.com',
-    github: 'yazmanito',
+    name: 'Erik',
+    email: 'erik@gmail.com',
+    github: 'Erik',
   },
   {
     id: '2',
-    name: 'John Doe',
-    email: 'leo@gmail.com',
-    github: 'leo',
+    name: 'Sora',
+    email: 'sora@gmail.com',
+    github: 'Sora',
   },
   {
     id: '3',
-    name: 'Haakon Dahlberg',
-    email: 'haakon@gmail.com',
-    github: 'midudev',
+    name: 'Riku',
+    email: 'riku@gmail.com',
+    github: 'Riku',
   },
 ]
 
@@ -55,9 +55,16 @@ export const usersSlice = createSlice({
       const id = action.payload
       return state.filter(user => user.id !== id)
     },
+    rollbackUser: (state, action: PayloadAction<UserWithId>) => {
+      const isUserAlreadyDefined = state.some(user => user.id === action.payload.id)
+
+      if (!isUserAlreadyDefined) {
+        return [...state, action.payload]
+      }
+    },
   },
 })
 
 export default usersSlice.reducer
 
-export const { addNewUser, deleteUserById } = usersSlice.actions
+export const { addNewUser, deleteUserById, rollbackUser } = usersSlice.actions
